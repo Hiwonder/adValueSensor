@@ -1,3 +1,3 @@
 {
-	"ad_sensor.adSensorValue|block":"获取传感器(支持:声音,旋钮,光线,雨滴,土壤湿度等)的ad值(0~255)"
+	"ad_sensor.adSensorValue|block":"获取传感器(支持:声音,旋钮,光线,雨滴,土壤湿度等)引脚|%adPin|的ad值(0~255)"
 }
