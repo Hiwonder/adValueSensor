@@ -6,9 +6,9 @@ namespace ad_sensor {
     /**
     * Get the ad sensor value 
     */
-    //% weight=98 blockId=adSensorValue block="Get sensor (suport:sound,knob,light,rain drop,soil humidity,etc) ad value(0~255)"
-    export function adSensorValue(avoidPin: AnalogPin): number {
-        let adValue = pins.analogReadPin(AnalogPin.P1);
+    //% weight=98 blockId=adSensorValue block="Get sensor (suport:sound,knob,light,rain drop,soil humidity,etc) pin %adPin ad value(0~255)"
+    export function adSensorValue(adPin: AnalogPin): number {
+        let adValue = pins.analogReadPin(adPin);
         adValue = adValue * 255 / 1023;
         return Math.round(adValue);
     }
